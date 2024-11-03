@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Argument object in JS</title>
+</head>
+<body>
+<p>Sum of Argument and Math objects</p>
+<p id="demo"></p>
+<script>
+function sumALL() {
+let sum = 0;    
+}
+for(i = 0; i <arguments.length;i++){
+sum += arguments [i];
+return sum;
+}
+document.getElementById("demo").innerHTML = sumALL (1, 123, 500, 115, 44, 88);
+let value = Math.sin(45);
+document.write("Sin 45 is : " + value + "<br>");
+let value1 = Math.sin(45);
+document.write("Sin 45 is : " + value1 + "<br>");
+let value2 = Math.sin(45);
+document.write("Sin 45 is : " + value2 + "<br>");
+</script>
+</body>
+</html>
